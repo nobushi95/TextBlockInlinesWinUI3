@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TextBlockInlinesWinUI3 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "TextBlockInlinesWinUI3 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
