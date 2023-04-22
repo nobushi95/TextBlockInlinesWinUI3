@@ -1,6 +1,7 @@
-// Copyright (c) Microsoft Corporation and Contributors.
+﻿// Copyright (c) Microsoft Corporation and Contributors.
 // Licensed under the MIT License.
 
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -16,6 +17,17 @@ namespace TextBlockInlinesWinUI3
         public MainWindow()
         {
             this.InitializeComponent();
+
+            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
+            var mainWindowId = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(hWnd);
+            var appWindow = AppWindow.GetFromWindowId(mainWindowId);
+
+            // ウィンドウサイズを指定する
+            appWindow.Resize(new(600, 300));
+
+            // ウィンドウサイズを変更不能にする
+            var presenter = appWindow.Presenter as OverlappedPresenter;
+            presenter.IsResizable = false;
         }
     }
 }
