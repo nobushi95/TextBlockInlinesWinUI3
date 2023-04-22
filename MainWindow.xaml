@@ -29,5 +29,6 @@
             <Run FontWeight="Bold">太字</Run>
             <Run FontSize="10">小さいサイズ</Run>
         </TextBlock>
+        <TextBlock x:Name="myTexxtBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"/>
     </StackPanel>
 </Window>
