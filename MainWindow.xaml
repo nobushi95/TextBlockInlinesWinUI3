@@ -1,4 +1,4 @@
-<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
 <!-- Licensed under the MIT License. -->
 
 <Window
@@ -9,8 +9,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="5">
+            <StackPanel.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="VerticalAlignment" Value="Bottom"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock>デフォルトのサイズ1</TextBlock>
+            <TextBlock>デフォルトのサイズ2</TextBlock>
+            <TextBlock FontSize="40">大きいサイズ</TextBlock>
+            <TextBlock FontWeight="Bold">太字</TextBlock>
+            <TextBlock FontSize="10">小さいサイズ</TextBlock>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5">
+            <Run >デフォルトのサイズ1</Run>
+            <Run >デフォルトのサイズ2</Run>
+            <Run FontSize="40">大きいサイズ</Run>
+            <Run FontWeight="Bold">太字</Run>
+            <Run FontSize="10">小さいサイズ</Run>
+        </TextBlock>
     </StackPanel>
 </Window>
