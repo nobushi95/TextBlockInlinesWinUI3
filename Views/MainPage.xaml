@@ -25,12 +25,12 @@
             <TextBlock FontSize="10">小さいサイズ</TextBlock>
         </StackPanel>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5">
-            <Run >デフォルトのサイズ1</Run>
-            <Run >デフォルトのサイズ2</Run>
+            <Run>デフォルトのサイズ1</Run>
+            <Run>デフォルトのサイズ2</Run>
             <Run FontSize="40">大きいサイズ</Run>
             <Run FontWeight="Bold">太字</Run>
             <Run FontSize="10">小さいサイズ</Run>
         </TextBlock>
-        <TextBlock x:Name="myTexxtBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"/>
+        <TextBlock x:Name="myTextBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"/>
     </StackPanel>
 </Page>

@@ -29,17 +29,17 @@ namespace TextBlockInlinesWinUI3.Views
 
         private void InitMyTextBlock()
         {
-            myTexxtBlock.Inlines.Clear();
+            myTextBlock.Inlines.Clear();
             var default1 = new Run() { Text = "デフォルトのサイズ2" };
             var default2 = new Run() { Text = "デフォルトのサイズ2" };
             var large = new Run() { Text = "大きいサイズ", FontSize = 40 };
             var bold = new Run() { Text = "太字", FontWeight = FontWeights.Bold };
             var small = new Run() { Text = "小さいサイズ", FontSize = 10 };
-            myTexxtBlock.Inlines.Add(default1);
-            myTexxtBlock.Inlines.Add(default2);
-            myTexxtBlock.Inlines.Add(large);
-            myTexxtBlock.Inlines.Add(bold);
-            myTexxtBlock.Inlines.Add(small);
+            myTextBlock.Inlines.Add(default1);
+            myTextBlock.Inlines.Add(default2);
+            myTextBlock.Inlines.Add(large);
+            myTextBlock.Inlines.Add(bold);
+            myTextBlock.Inlines.Add(small);
         }
     }
 }
